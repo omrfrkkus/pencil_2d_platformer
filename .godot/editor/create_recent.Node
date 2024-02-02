@@ -1,3 +1,5 @@
+TouchScreenButton
+CanvasLayer
 Node
 Control
 Button
@@ -6,9 +8,7 @@ Panel
 HSplitContainer
 MenuButton
 CheckButton
-CanvasLayer
 AnimationPlayer
 TextureRect
 CollisionShape2D
 Area2D
-CharacterBody2D

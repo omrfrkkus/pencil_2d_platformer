@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://drtdi17umgscp"]
+[gd_scene load_steps=14 format=3 uid="uid://drtdi17umgscp"]
 
 [ext_resource type="Script" path="res://game_manager.gd" id="1_3ufph"]
 [ext_resource type="Texture2D" uid="uid://dxuvauedyxoly" path="res://images/Green.png" id="2_ongti"]
@@ -10,6 +10,7 @@
 [ext_resource type="FontFile" uid="uid://to2inn4lww5g" path="res://font/CONCHARS.png" id="8_o7uhm"]
 [ext_resource type="PackedScene" uid="uid://dg6jrn3kk0vrv" path="res://UI/transitions.tscn" id="8_shvyg"]
 [ext_resource type="PackedScene" uid="uid://7mkwpdwagvjq" path="res://UI/pause_menu.tscn" id="9_3cbvs"]
+[ext_resource type="PackedScene" uid="uid://bfd2cihkddurq" path="res://UI/mobile_controls.tscn" id="11_60h45"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rthhm"]
 texture = ExtResource("3_vxgj6")
@@ -648,9 +649,11 @@ transitioner = NodePath("../../UI/Transitions")
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Transitions" parent="UI" instance=ExtResource("8_shvyg")]
+visible = false
 scene_to_load = ExtResource("7_bnrid")
 
 [node name="Pause_Menu" parent="UI" node_paths=PackedStringArray("game_manager") instance=ExtResource("9_3cbvs")]
+visible = false
 game_manager = NodePath("../../GameManager")
 
 [node name="Points Label" type="Label" parent="UI"]
@@ -663,3 +666,6 @@ theme_override_font_sizes/font_size = 25
 text = "Points : 0"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="CanvasLayer" parent="UI" instance=ExtResource("11_60h45")]
+visible = false
