@@ -1,2 +1,2 @@
-# pencil_2d_platformer
+# Pencil 2D Platformer Game
  
