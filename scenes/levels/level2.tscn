@@ -649,11 +649,9 @@ transitioner = NodePath("../../UI/Transitions")
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Transitions" parent="UI" instance=ExtResource("8_shvyg")]
-visible = false
 scene_to_load = ExtResource("7_bnrid")
 
 [node name="Pause_Menu" parent="UI" node_paths=PackedStringArray("game_manager") instance=ExtResource("9_3cbvs")]
-visible = false
 game_manager = NodePath("../../GameManager")
 
 [node name="Points Label" type="Label" parent="UI"]
@@ -667,5 +665,4 @@ text = "Points : 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CanvasLayer" parent="UI" instance=ExtResource("11_60h45")]
-visible = false
+[node name="MobileControls" parent="UI" instance=ExtResource("11_60h45")]

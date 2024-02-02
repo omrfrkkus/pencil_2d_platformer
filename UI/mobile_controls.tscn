@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://bfd2cihkddurq"]
+[gd_scene load_steps=7 format=3 uid="uid://bfd2cihkddurq"]
 
 [ext_resource type="Texture2D" uid="uid://dc8vv8tmfhal6" path="res://images/ui/left.png" id="1_vi3xu"]
 [ext_resource type="Texture2D" uid="uid://cs5rrdkknoj2m" path="res://images/ui/right.png" id="2_o2sy4"]
+[ext_resource type="Texture2D" uid="uid://bi8splv6weveg" path="res://images/ui/line.png" id="3_aqj56"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kk0f6"]
 size = Vector2(200, 720)
@@ -12,7 +13,7 @@ size = Vector2(470, 720)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j0ioc"]
 size = Vector2(600, 600)
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[node name="MobileControls" type="CanvasLayer"]
 
 [node name="left" type="TouchScreenButton" parent="."]
 position = Vector2(100, 360)
@@ -38,3 +39,8 @@ texture = ExtResource("2_o2sy4")
 position = Vector2(981, 420)
 shape = SubResource("RectangleShape2D_j0ioc")
 action = "jump"
+
+[node name="Line" type="Sprite2D" parent="."]
+position = Vector2(203, 620)
+scale = Vector2(3, 3)
+texture = ExtResource("3_aqj56")
