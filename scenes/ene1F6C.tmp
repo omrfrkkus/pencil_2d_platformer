@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b78q3f6nbjjev"]
+
+[ext_resource type="Texture2D" uid="uid://dj01corqa71cx" path="res://sharpener (32x32).png" id="1_8xh4x"]
+[ext_resource type="Script" path="res://scenes/enemy_sharpener.gd" id="1_jav0a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uye1l"]
+size = Vector2(54, 96)
+
+[node name="Enemy_Sharpener" type="CharacterBody2D"]
+script = ExtResource("1_jav0a")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_8xh4x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_uye1l")

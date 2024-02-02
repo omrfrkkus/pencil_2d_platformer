@@ -1,0 +1,22 @@
+[remap]
+
+importer="font_data_image"
+type="FontFile"
+uid="uid://diubdb00wnm76"
+path="res://.godot/imported/Text (Black) (8x10).png-9117b950f9587321992799ac0d535a4e.fontdata"
+
+[deps]
+
+source_file="res://font/Text (Black) (8x10).png"
+dest_files=["res://.godot/imported/Text (Black) (8x10).png-9117b950f9587321992799ac0d535a4e.fontdata"]
+
+[params]
+
+character_ranges=PackedStringArray("0-49")
+columns=10
+rows=5
+image_margin=Rect2i(0, 0, 0, 0)
+character_margin=Rect2i(0, 0, 0, 0)
+fallbacks=[]
+compress=true
+scaling_mode=2

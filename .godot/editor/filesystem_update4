@@ -1,0 +1,8 @@
+res://scenes/level1.tscn
+res://game_manager.gd
+res://scenes/level1.gd
+res://UI/pause_menu.gd
+res://UI/pause_menu.tscn
+res://scenes/collectible.tscn
+res://scenes/level2.tscn
+res://scenes/finish.gd

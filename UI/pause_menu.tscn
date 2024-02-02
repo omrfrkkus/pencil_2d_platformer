@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://7mkwpdwagvjq"]
+
+[ext_resource type="Script" path="res://UI/pause_menu.gd" id="1_5ttu6"]
+[ext_resource type="FontFile" uid="uid://5ijq20b2lebh" path="res://font/CONCHARSWhite.png" id="2_a850q"]
+[ext_resource type="Texture2D" uid="uid://bw4bewqjaeubc" path="res://images/Play.png" id="3_4lkr2"]
+
+[node name="Pause_Menu" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5ttu6")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.0
+offset_top = -167.0
+offset_right = 193.0
+offset_bottom = 167.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -169.5
+offset_top = -147.0
+offset_right = 169.5
+offset_bottom = 147.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResumeButton" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_a850q")
+text = "Resume"
+icon = ExtResource("3_4lkr2")
+
+[connection signal="pressed" from="Panel/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]

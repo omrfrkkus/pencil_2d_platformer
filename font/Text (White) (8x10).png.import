@@ -1,0 +1,22 @@
+[remap]
+
+importer="font_data_image"
+type="FontFile"
+uid="uid://dvol8lsp57kqp"
+path="res://.godot/imported/Text (White) (8x10).png-0d1e034367f9d68a0f50a21618b22a37.fontdata"
+
+[deps]
+
+source_file="res://font/Text (White) (8x10).png"
+dest_files=["res://.godot/imported/Text (White) (8x10).png-0d1e034367f9d68a0f50a21618b22a37.fontdata"]
+
+[params]
+
+character_ranges=PackedStringArray("0-49")
+columns=10
+rows=5
+image_margin=Rect2i(0, 0, 0, 0)
+character_margin=Rect2i(0, 0, 0, 0)
+fallbacks=[]
+compress=true
+scaling_mode=2
