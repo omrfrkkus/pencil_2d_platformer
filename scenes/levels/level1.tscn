@@ -604,6 +604,28 @@ metadata/_edit_horizontal_guides_ = [176.0]
 unique_name_in_owner = true
 script = ExtResource("1_wv8gq")
 
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Transitions" parent="UI" instance=ExtResource("9_qn4hc")]
+scene_to_load = ExtResource("7_vyl6f")
+
+[node name="Pause_Menu" parent="UI" node_paths=PackedStringArray("game_manager", "transitioner") instance=ExtResource("10_d6v8p")]
+game_manager = NodePath("../../GameManager")
+transitioner = NodePath("../Transitions")
+
+[node name="Points Label" type="Label" parent="UI"]
+unique_name_in_owner = true
+texture_filter = 1
+offset_right = 302.0
+offset_bottom = 71.0
+theme_override_fonts/font = ExtResource("11_ck2ab")
+theme_override_font_sizes/font_size = 25
+text = "Points : 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MobileControls" parent="UI" instance=ExtResource("12_nouqw")]
+
 [node name="SceneObjects" type="Node" parent="."]
 process_mode = 1
 
@@ -659,24 +681,3 @@ position = Vector2(1020, 431)
 transitioner = NodePath("../../UI/Transitions")
 left_limit = 700.0
 right_limit = 1050.0
-
-[node name="UI" type="CanvasLayer" parent="."]
-
-[node name="Transitions" parent="UI" instance=ExtResource("9_qn4hc")]
-scene_to_load = ExtResource("7_vyl6f")
-
-[node name="Pause_Menu" parent="UI" node_paths=PackedStringArray("game_manager") instance=ExtResource("10_d6v8p")]
-game_manager = NodePath("../../GameManager")
-
-[node name="Points Label" type="Label" parent="UI"]
-unique_name_in_owner = true
-texture_filter = 1
-offset_right = 302.0
-offset_bottom = 71.0
-theme_override_fonts/font = ExtResource("11_ck2ab")
-theme_override_font_sizes/font_size = 25
-text = "Points : 0"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="MobileControls" parent="UI" instance=ExtResource("12_nouqw")]

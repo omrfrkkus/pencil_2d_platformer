@@ -651,8 +651,9 @@ transitioner = NodePath("../../UI/Transitions")
 [node name="Transitions" parent="UI" instance=ExtResource("8_shvyg")]
 scene_to_load = ExtResource("7_bnrid")
 
-[node name="Pause_Menu" parent="UI" node_paths=PackedStringArray("game_manager") instance=ExtResource("9_3cbvs")]
+[node name="Pause_Menu" parent="UI" node_paths=PackedStringArray("game_manager", "transitioner") instance=ExtResource("9_3cbvs")]
 game_manager = NodePath("../../GameManager")
+transitioner = NodePath("../Transitions")
 
 [node name="Points Label" type="Label" parent="UI"]
 unique_name_in_owner = true
