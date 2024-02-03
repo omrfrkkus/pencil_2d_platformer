@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dj01corqa71cx"
-path="res://.godot/imported/sharpener (32x32).png-57d466d84f369aa41346fedfb1add1f7.ctex"
+uid="uid://bxfj1gh215suv"
+path="res://.godot/imported/Close.png-f7ecb4db7d4933f8406601f89503ba0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/sharpener (32x32).png"
-dest_files=["res://.godot/imported/sharpener (32x32).png-57d466d84f369aa41346fedfb1add1f7.ctex"]
+source_file="res://images/ui/Close.png"
+dest_files=["res://.godot/imported/Close.png-f7ecb4db7d4933f8406601f89503ba0d.ctex"]
 
 [params]
 

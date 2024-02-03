@@ -120,9 +120,9 @@ script = ExtResource("1_di314")
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_uqdn2")
-animation = &"jump"
+animation = &"running"
 autoplay = "default"
-frame_progress = 0.319302
+frame_progress = 0.985597
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_q806h")

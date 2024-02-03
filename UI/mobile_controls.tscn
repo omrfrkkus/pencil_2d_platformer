@@ -11,7 +11,7 @@ size = Vector2(200, 720)
 size = Vector2(470, 720)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j0ioc"]
-size = Vector2(600, 600)
+size = Vector2(1200, 600)
 
 [node name="MobileControls" type="CanvasLayer"]
 
@@ -36,7 +36,7 @@ scale = Vector2(3, 3)
 texture = ExtResource("2_o2sy4")
 
 [node name="jump" type="TouchScreenButton" parent="."]
-position = Vector2(981, 420)
+position = Vector2(1280, 420)
 shape = SubResource("RectangleShape2D_j0ioc")
 action = "jump"
 

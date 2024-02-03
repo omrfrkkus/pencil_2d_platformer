@@ -1,7 +1,78 @@
-[gd_scene load_steps=5 format=3 uid="uid://b78q3f6nbjjev"]
+[gd_scene load_steps=15 format=3 uid="uid://b78q3f6nbjjev"]
 
-[ext_resource type="Texture2D" uid="uid://dj01corqa71cx" path="res://images/sharpener (32x32).png" id="1_8xh4x"]
 [ext_resource type="Script" path="res://scenes/enemy_sharpener.gd" id="1_jav0a"]
+[ext_resource type="Texture2D" uid="uid://0xqlx4wrsuby" path="res://images/enemies/sharpener-288x32.png" id="2_3uskr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6gaj"]
+atlas = ExtResource("2_3uskr")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33ur5"]
+atlas = ExtResource("2_3uskr")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_odj1j"]
+atlas = ExtResource("2_3uskr")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bbc5f"]
+atlas = ExtResource("2_3uskr")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cl1g2"]
+atlas = ExtResource("2_3uskr")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_je723"]
+atlas = ExtResource("2_3uskr")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hld2r"]
+atlas = ExtResource("2_3uskr")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4155o"]
+atlas = ExtResource("2_3uskr")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b2roi"]
+atlas = ExtResource("2_3uskr")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d872d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6gaj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_33ur5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_odj1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bbc5f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cl1g2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_je723")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hld2r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4155o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b2roi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5iwsf"]
 radius = 24.0
@@ -13,9 +84,11 @@ size = Vector2(60, 96)
 [node name="EnemySharpener" type="CharacterBody2D"]
 script = ExtResource("1_jav0a")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(3, 3)
-texture = ExtResource("1_8xh4x")
+sprite_frames = SubResource("SpriteFrames_d872d")
+autoplay = "default"
+frame_progress = 0.14495
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1.5)

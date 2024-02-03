@@ -15,12 +15,14 @@ func _ready():
 
 
 func set_next_animation(fading_out : bool):
+	get_tree().paused = true
 	if(fading_out):
 		animation_player.queue("fade_out")
 	else:
 		animation_player.queue("fade_in")
 		
 func set_reload_animation(fading_out : bool):
+	get_tree().paused = true
 	is_reload = true
 	if(fading_out):
 		animation_player.queue("fade_out")
@@ -29,6 +31,7 @@ func set_reload_animation(fading_out : bool):
 
 
 func _on_animation_player_animation_finished(anim_name):
+	get_tree().paused = false
 	if(is_reload):
 		get_tree().reload_current_scene()
 	elif(scene_to_load != null && anim_name == scene_switch_anim):

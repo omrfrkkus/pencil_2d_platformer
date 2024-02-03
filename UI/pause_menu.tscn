@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://7mkwpdwagvjq"]
+[gd_scene load_steps=6 format=3 uid="uid://7mkwpdwagvjq"]
 
 [ext_resource type="Script" path="res://UI/pause_menu.gd" id="1_5ttu6"]
-[ext_resource type="FontFile" uid="uid://5ijq20b2lebh" path="res://font/CONCHARSWhite.png" id="2_a850q"]
-[ext_resource type="Texture2D" uid="uid://bw4bewqjaeubc" path="res://images/Play.png" id="3_4lkr2"]
+[ext_resource type="Texture2D" uid="uid://bw4bewqjaeubc" path="res://images/ui/Play.png" id="2_i1ss6"]
+[ext_resource type="Texture2D" uid="uid://c88ywwcmlsvd5" path="res://images/ui/Restart.png" id="3_vbjob"]
+[ext_resource type="Texture2D" uid="uid://bxfj1gh215suv" path="res://images/ui/Close.png" id="4_qjwa4"]
+[ext_resource type="Texture2D" uid="uid://p0jikq8n4wr8" path="res://images/ui/Volume.png" id="5_es122"]
 
 [node name="Pause_Menu" type="Control"]
 process_mode = 2
@@ -30,24 +32,41 @@ offset_bottom = 167.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -169.5
-offset_top = -147.0
-offset_right = 169.5
-offset_bottom = 147.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="ResumeButton" type="Button" parent="Panel/VBoxContainer"]
+[node name="ResumeButton" type="TextureButton" parent="Panel"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_a850q")
-text = "Resume"
-icon = ExtResource("3_4lkr2")
+offset_left = 9.0
+offset_top = 5.0
+offset_right = 184.0
+offset_bottom = 167.0
+texture_normal = ExtResource("2_i1ss6")
+stretch_mode = 5
 
-[connection signal="pressed" from="Panel/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[node name="RestartButton" type="TextureButton" parent="Panel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 3.0
+offset_right = 380.0
+offset_bottom = 166.0
+texture_normal = ExtResource("3_vbjob")
+stretch_mode = 5
+
+[node name="CloseButton" type="TextureButton" parent="Panel"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 164.0
+offset_right = 170.0
+offset_bottom = 323.0
+texture_normal = ExtResource("4_qjwa4")
+stretch_mode = 5
+
+[node name="SoundButton" type="TextureButton" parent="Panel"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 168.0
+offset_right = 369.0
+offset_bottom = 323.0
+texture_normal = ExtResource("5_es122")
+stretch_mode = 5
+
+[connection signal="pressed" from="Panel/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="Panel/RestartButton" to="." method="_on_restart_button_pressed"]

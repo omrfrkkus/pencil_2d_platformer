@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 80.0
+const SPEED = 70.0
 const JUMP_VELOCITY = -400.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
@@ -30,4 +30,5 @@ func _physics_process(delta):
 func _on_area_2d_body_entered(body):
 	if body.name == "CharacterBody2D":
 		print("Düşmanla temas edildi. Yeniden yükleniyor...")
+		get_tree().paused = true
 		transitioner.set_reload_animation(true)
