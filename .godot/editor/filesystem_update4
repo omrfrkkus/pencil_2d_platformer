@@ -1,5 +1,2 @@
-res://UI/pause_menu.gd
-res://UI/transitions.tscn
-res://UI/transitioner.gd
-res://UI/pause_menu.tscn
 res://scenes/levels/level1.tscn
+res://scenes/objects/moving_platform.tscn

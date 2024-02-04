@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://b78q3f6nbjjev"]
 
-[ext_resource type="Script" path="res://scenes/enemy_sharpener.gd" id="1_jav0a"]
+[ext_resource type="Script" path="res://scenes/characters/enemies/enemy_sharpener.gd" id="1_jav0a"]
 [ext_resource type="Texture2D" uid="uid://0xqlx4wrsuby" path="res://images/enemies/sharpener-288x32.png" id="2_3uskr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s6gaj"]

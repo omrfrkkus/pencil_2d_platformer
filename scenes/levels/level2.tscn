@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://game_manager.gd" id="1_3ufph"]
 [ext_resource type="Texture2D" uid="uid://dv44vy08o511m" path="res://images/background/Blue.png" id="2_lm45h"]
 [ext_resource type="Texture2D" uid="uid://hq67av05w1l7" path="res://images/Terrain (16x16).png" id="3_vxgj6"]
-[ext_resource type="PackedScene" uid="uid://sjoim2ad2w0l" path="res://scenes/main_character.tscn" id="4_dq6a2"]
+[ext_resource type="PackedScene" uid="uid://sjoim2ad2w0l" path="res://scenes/characters/main/main_character.tscn" id="4_dq6a2"]
 [ext_resource type="PackedScene" uid="uid://2fy3j6kohjum" path="res://scenes/collectible.tscn" id="5_elmpa"]
 [ext_resource type="PackedScene" uid="uid://bwlq3owfj8aag" path="res://scenes/finish.tscn" id="6_dr2sq"]
 [ext_resource type="PackedScene" uid="uid://v2eqgrmknqct" path="res://scenes/main_menu.tscn" id="7_bnrid"]
@@ -667,3 +667,4 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MobileControls" parent="UI" instance=ExtResource("11_60h45")]
+layer = 0

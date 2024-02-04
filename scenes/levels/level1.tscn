@@ -1,17 +1,19 @@
-[gd_scene load_steps=15 format=3 uid="uid://d31qpewbyksf4"]
+[gd_scene load_steps=17 format=3 uid="uid://d31qpewbyksf4"]
 
 [ext_resource type="Script" path="res://game_manager.gd" id="1_wv8gq"]
 [ext_resource type="Texture2D" uid="uid://dxuvauedyxoly" path="res://images/background/Green.png" id="2_pddwg"]
 [ext_resource type="Texture2D" uid="uid://hq67av05w1l7" path="res://images/Terrain (16x16).png" id="3_4wi0c"]
-[ext_resource type="PackedScene" uid="uid://sjoim2ad2w0l" path="res://scenes/main_character.tscn" id="4_66qlp"]
+[ext_resource type="PackedScene" uid="uid://sjoim2ad2w0l" path="res://scenes/characters/main/main_character.tscn" id="4_66qlp"]
 [ext_resource type="PackedScene" uid="uid://2fy3j6kohjum" path="res://scenes/collectible.tscn" id="5_geh25"]
 [ext_resource type="PackedScene" uid="uid://bwlq3owfj8aag" path="res://scenes/finish.tscn" id="6_nlgtb"]
 [ext_resource type="PackedScene" uid="uid://drtdi17umgscp" path="res://scenes/levels/level2.tscn" id="7_vyl6f"]
-[ext_resource type="PackedScene" uid="uid://b78q3f6nbjjev" path="res://scenes/enemy_sharpener.tscn" id="8_65764"]
+[ext_resource type="PackedScene" uid="uid://b78q3f6nbjjev" path="res://scenes/characters/enemies/enemy_sharpener.tscn" id="8_65764"]
 [ext_resource type="PackedScene" uid="uid://dg6jrn3kk0vrv" path="res://UI/transitions.tscn" id="9_qn4hc"]
 [ext_resource type="PackedScene" uid="uid://7mkwpdwagvjq" path="res://UI/pause_menu.tscn" id="10_d6v8p"]
 [ext_resource type="FontFile" uid="uid://to2inn4lww5g" path="res://font/CONCHARS.png" id="11_ck2ab"]
 [ext_resource type="PackedScene" uid="uid://bfd2cihkddurq" path="res://UI/mobile_controls.tscn" id="12_nouqw"]
+[ext_resource type="PackedScene" uid="uid://de6sau0njx1xf" path="res://scenes/characters/enemies/enemy_eraser.tscn" id="13_yoc1n"]
+[ext_resource type="PackedScene" uid="uid://b3nibhwp3wemx" path="res://scenes/objects/moving_platform.tscn" id="14_l5p3n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rthhm"]
 texture = ExtResource("3_4wi0c")
@@ -625,6 +627,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MobileControls" parent="UI" instance=ExtResource("12_nouqw")]
+layer = 0
 
 [node name="SceneObjects" type="Node" parent="."]
 process_mode = 1
@@ -670,14 +673,25 @@ position = Vector2(1671, 574)
 target_level = ExtResource("7_vyl6f")
 transitioner = NodePath("../../UI/Transitions")
 
-[node name="EnemySharpener" parent="SceneObjects" node_paths=PackedStringArray("transitioner") instance=ExtResource("8_65764")]
+[node name="MovingPlatform" parent="SceneObjects" instance=ExtResource("14_l5p3n")]
+position = Vector2(1343, 482)
+
+[node name="Enemies" type="Node" parent="SceneObjects"]
+
+[node name="EnemySharpener" parent="SceneObjects/Enemies" node_paths=PackedStringArray("transitioner") instance=ExtResource("8_65764")]
 position = Vector2(1998, 575)
-transitioner = NodePath("../../UI/Transitions")
+transitioner = NodePath("../../../UI/Transitions")
 left_limit = 1500.0
 right_limit = 2100.0
 
-[node name="EnemySharpener2" parent="SceneObjects" node_paths=PackedStringArray("transitioner") instance=ExtResource("8_65764")]
+[node name="EnemySharpener2" parent="SceneObjects/Enemies" node_paths=PackedStringArray("transitioner") instance=ExtResource("8_65764")]
 position = Vector2(1020, 431)
-transitioner = NodePath("../../UI/Transitions")
+transitioner = NodePath("../../../UI/Transitions")
 left_limit = 700.0
 right_limit = 1050.0
+
+[node name="EnemyEraser" parent="SceneObjects/Enemies" node_paths=PackedStringArray("transitioner") instance=ExtResource("13_yoc1n")]
+position = Vector2(1300, 558)
+transitioner = NodePath("../../../UI/Transitions")
+left_limit = 1250.0
+right_limit = 1500.0

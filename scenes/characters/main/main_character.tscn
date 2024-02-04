@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://sjoim2ad2w0l"]
 
-[ext_resource type="Script" path="res://scenes/main_character.gd" id="1_di314"]
+[ext_resource type="Script" path="res://scenes/characters/main/main_character.gd" id="1_di314"]
 [ext_resource type="Texture2D" uid="uid://cy0cev8cbblob" path="res://images/pencil_idle-96x32.png" id="2_fglbx"]
 [ext_resource type="Texture2D" uid="uid://bm5fo10jhegur" path="res://images/pencil_jump.png" id="3_tt41y"]
 [ext_resource type="Texture2D" uid="uid://qwxxvyqh4ngx" path="res://images/pencil-running.png" id="4_0r5jj"]
