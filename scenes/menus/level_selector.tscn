@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3 uid="uid://i7f6b2345ia6"]
+
+[ext_resource type="Script" path="res://scenes/menus/level_selector.gd" id="1_wfwd8"]
+[ext_resource type="Texture2D" uid="uid://dxuvauedyxoly" path="res://images/background/Green.png" id="2_kth3g"]
+[ext_resource type="Texture2D" uid="uid://dqoevhdfucqql" path="res://images/levels/01.png" id="3_uo1gu"]
+[ext_resource type="Texture2D" uid="uid://d4csh7f6qyqts" path="res://images/levels/02.png" id="4_vms7e"]
+[ext_resource type="Texture2D" uid="uid://khoa3iuqb41y" path="res://images/levels/03.png" id="5_f58m8"]
+[ext_resource type="Texture2D" uid="uid://qi0nods6owy3" path="res://images/levels/04.png" id="6_x84dd"]
+
+[node name="LevelSelector" type="Node"]
+script = ExtResource("1_wfwd8")
+
+[node name="Background" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_kth3g")
+stretch_mode = 1
+
+[node name="level1" type="TextureButton" parent="."]
+offset_left = 160.0
+offset_top = 143.0
+offset_right = 200.0
+offset_bottom = 183.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("3_uo1gu")
+stretch_mode = 6
+
+[node name="level2" type="TextureButton" parent="."]
+offset_left = 160.0
+offset_top = 368.0
+offset_right = 200.0
+offset_bottom = 408.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("4_vms7e")
+stretch_mode = 6
+
+[node name="level3" type="TextureButton" parent="."]
+offset_left = 399.0
+offset_top = 369.0
+offset_right = 439.0
+offset_bottom = 409.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("5_f58m8")
+stretch_mode = 6
+
+[node name="level4" type="TextureButton" parent="."]
+offset_left = 396.0
+offset_top = 147.0
+offset_right = 436.0
+offset_bottom = 187.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("6_x84dd")
+stretch_mode = 6
+
+[connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="level4" to="." method="_on_level_4_pressed"]

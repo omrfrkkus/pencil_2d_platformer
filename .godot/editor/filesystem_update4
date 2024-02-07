@@ -1,2 +1,7 @@
 res://scenes/levels/level1.tscn
 res://scenes/objects/moving_platform.tscn
+res://scenes/main_menu.tscn
+res://scenes/menus/main_menu.tscn
+res://scenes/menus/level_selector.tscn
+res://scenes/menus/main_menu.gd
+res://scenes/menus/level_selector.gd

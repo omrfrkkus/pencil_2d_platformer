@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707345103
+::res://::1707348755
 game_manager.gd::GDScript::-1::1706825461::0::1::::GameManager<>Node<>::
 README.md::TextFile::-1::1706905373::0::1::::<><>::
 ::res://font/::1706575812
@@ -8,7 +8,7 @@ CONCHARSWhite.png::FontFile::2122756813643344033::1706575244::1706575258::1::::<
 Text (Black) 1.png::FontFile::5181826464962523477::1706575739::1706575812::1::::<><>::
 Text (Black) (8x10).png::FontFile::7762126521948510391::1706565259::1706575135::1::::<><>::
 Text (White) (8x10).png::FontFile::8662856480440335127::1706565259::1706574949::1::::<><>::
-::res://images/::1706999636
+::res://images/::1707348755
 aplus.png::CompressedTexture2D::1236735230086155152::1706551569::1706825722::1::::<><>::
 close.png::CompressedTexture2D::3810553272903501522::1706999636::1706999626::1::::<><>::
 icon.svg::CompressedTexture2D::7910275202115878957::1706474053::1706825722::1::::<><>::
@@ -22,19 +22,68 @@ Pink.png::CompressedTexture2D::1628014203127596236::1706914996::1706914996::1:::
 Purple.png::CompressedTexture2D::7271160631722995972::1706914996::1706914996::1::::<><>::
 Terrain (16x16).png::CompressedTexture2D::526291355329663726::1706474182::1706825722::1::::<><>::
 Yellow.png::CompressedTexture2D::5036540455937814669::1706914996::1706914996::1::::<><>::
-::res://images/background/::1707335948
+::res://images/background/::1707347706
 Blue.png::CompressedTexture2D::8694894317507748632::1706914996::1706915845::1::::<><>::
 Brown.png::CompressedTexture2D::2295908238790629122::1706914996::1706915845::1::::<><>::
-classroom128x128.png::CompressedTexture2D::8228589970122045479::1707335887::1707335887::1::::<><>::
 classroom256x128.png::CompressedTexture2D::801228415246322964::1707335948::1707335948::1::::<><>::
 Gray.png::CompressedTexture2D::4583209278223678595::1706914996::1706915845::1::::<><>::
 Green.png::CompressedTexture2D::8816169123498858718::1706914996::1706915845::1::::<><>::
-window-128x128.png::CompressedTexture2D::7344998692066691473::1707335163::1707335163::1::::<><>::
 ::res://images/enemies/::1707066188
 eraser-32x32.png::CompressedTexture2D::2965816236547175631::1707066184::1707066184::1::::<><>::
 eraser-288x32.png::CompressedTexture2D::4252875955654251126::1707066188::1707066188::1::::<><>::
 sharpener (32x32).png::CompressedTexture2D::7844154063389658627::1706529181::1706914420::1::::<><>::
 sharpener-288x32.png::CompressedTexture2D::1803194148770810794::1706914413::1706914414::1::::<><>::
+::res://images/levels/::1707348749
+01.png::CompressedTexture2D::8311465580039592603::1707348749::1707348756::1::::<><>::
+02.png::CompressedTexture2D::9199974368419561144::1707348749::1707348756::1::::<><>::
+03.png::CompressedTexture2D::717190602499875720::1707348749::1707348756::1::::<><>::
+04.png::CompressedTexture2D::1141078401202077444::1707348749::1707348756::1::::<><>::
+05.png::CompressedTexture2D::7848303188765506229::1707348749::1707348756::1::::<><>::
+06.png::CompressedTexture2D::6435914796370779150::1707348749::1707348756::1::::<><>::
+07.png::CompressedTexture2D::6702500265849771612::1707348749::1707348756::1::::<><>::
+08.png::CompressedTexture2D::1694148023649487319::1707348749::1707348756::1::::<><>::
+09.png::CompressedTexture2D::7738237053049862430::1707348749::1707348756::1::::<><>::
+10.png::CompressedTexture2D::4343745012499378198::1707348749::1707348756::1::::<><>::
+11.png::CompressedTexture2D::4273441029649027477::1707348749::1707348756::1::::<><>::
+12.png::CompressedTexture2D::7212364300592072295::1707348749::1707348756::1::::<><>::
+13.png::CompressedTexture2D::9120241264451747889::1707348749::1707348756::1::::<><>::
+14.png::CompressedTexture2D::2209268030030006849::1707348749::1707348756::1::::<><>::
+15.png::CompressedTexture2D::2234107003201702231::1707348749::1707348756::1::::<><>::
+16.png::CompressedTexture2D::8402803315004270052::1707348749::1707348756::1::::<><>::
+17.png::CompressedTexture2D::3143168779768229647::1707348749::1707348756::1::::<><>::
+18.png::CompressedTexture2D::610578311945141465::1707348749::1707348756::1::::<><>::
+19.png::CompressedTexture2D::6715508895912523198::1707348749::1707348756::1::::<><>::
+20.png::CompressedTexture2D::5615804795824226568::1707348749::1707348756::1::::<><>::
+21.png::CompressedTexture2D::7097866051508761495::1707348749::1707348756::1::::<><>::
+22.png::CompressedTexture2D::7632480852691543958::1707348749::1707348756::1::::<><>::
+23.png::CompressedTexture2D::8405766900971146791::1707348749::1707348756::1::::<><>::
+24.png::CompressedTexture2D::7168500812618368381::1707348749::1707348756::1::::<><>::
+25.png::CompressedTexture2D::1904206269044653061::1707348749::1707348756::1::::<><>::
+26.png::CompressedTexture2D::2257726482119951251::1707348749::1707348756::1::::<><>::
+27.png::CompressedTexture2D::7532813587952143097::1707348749::1707348756::1::::<><>::
+28.png::CompressedTexture2D::7296422428750196502::1707348749::1707348756::1::::<><>::
+29.png::CompressedTexture2D::6180236214488950738::1707348749::1707348756::1::::<><>::
+30.png::CompressedTexture2D::5968107117195907794::1707348749::1707348756::1::::<><>::
+31.png::CompressedTexture2D::9145853022997905554::1707348749::1707348756::1::::<><>::
+32.png::CompressedTexture2D::1662959078194134425::1707348749::1707348756::1::::<><>::
+33.png::CompressedTexture2D::2111678679969068311::1707348749::1707348756::1::::<><>::
+34.png::CompressedTexture2D::1253548582361975425::1707348749::1707348756::1::::<><>::
+35.png::CompressedTexture2D::5989487535049580843::1707348749::1707348756::1::::<><>::
+36.png::CompressedTexture2D::5682754864533472916::1707348749::1707348756::1::::<><>::
+37.png::CompressedTexture2D::2693878648768502491::1707348749::1707348756::1::::<><>::
+38.png::CompressedTexture2D::8928059449000070980::1707348749::1707348756::1::::<><>::
+39.png::CompressedTexture2D::7888329521270484090::1707348749::1707348756::1::::<><>::
+40.png::CompressedTexture2D::5976988413810244934::1707348749::1707348756::1::::<><>::
+41.png::CompressedTexture2D::3323583721256066574::1707348749::1707348756::1::::<><>::
+42.png::CompressedTexture2D::7010478476166319752::1707348749::1707348756::1::::<><>::
+43.png::CompressedTexture2D::4308792051206548215::1707348749::1707348756::1::::<><>::
+44.png::CompressedTexture2D::104685413189211890::1707348749::1707348756::1::::<><>::
+45.png::CompressedTexture2D::2526867355672337032::1707348749::1707348756::1::::<><>::
+46.png::CompressedTexture2D::1898239809771047890::1707348749::1707348756::1::::<><>::
+47.png::CompressedTexture2D::2385137782413736548::1707348749::1707348756::1::::<><>::
+48.png::CompressedTexture2D::6333035821719706987::1707348749::1707348756::1::::<><>::
+49.png::CompressedTexture2D::2104942414183016616::1707348749::1707348756::1::::<><>::
+50.png::CompressedTexture2D::4174082364789471857::1707348749::1707348756::1::::<><>::
 ::res://images/ui/::1706999743
 close.png::CompressedTexture2D::8518620404173403185::1706999743::1706999743::1::::<><>::
 left.png::CompressedTexture2D::7369078525933460061::1706903114::1706903114::1::::<><>::
@@ -45,14 +94,12 @@ Restart.png::CompressedTexture2D::7158695327781514904::1706917649::1706917650::1
 right.png::CompressedTexture2D::6099234606356374214::1706903119::1706903119::1::::<><>::
 Settings.png::CompressedTexture2D::2439977963973622763::1706562263::1706916811::1::::<><>::
 Volume.png::CompressedTexture2D::1105003389176396819::1706917641::1706917641::1::::<><>::
-::res://scenes/::1707086212
+::res://scenes/::1707348531
 close.png::CompressedTexture2D::3000946443341632050::1706999576::1706999577::1::::<><>::
 collectible.gd::GDScript::-1::1706551894::0::1::::<>Area2D<>::
 collectible.tscn::PackedScene::1906928398125342832::1706825745::0::1::::<><>::res://scenes/collectible.gd<>uid://rvc336oh71jg::::res://images/aplus.png
 finish.gd::GDScript::-1::1706825982::0::1::::<>Area2D<>::
 finish.tscn::PackedScene::3954305642691171902::1706994129::0::1::::<><>::uid://dj2v81kefqaln::::res://images/note.png<>res://scenes/finish.gd
-main_menu.gd::GDScript::-1::1706915678::0::1::::<>Node<>::
-main_menu.tscn::PackedScene::1529975698392732127::1706917573::0::1::::<><>::res://scenes/main_menu.gd<>uid://dxuvauedyxoly::::res://images/background/Green.png<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://cy0cev8cbblob::::res://images/pencil_idle-96x32.png<>uid://ba07c0ff3ifhj::::res://images/ui/Settings.png
 ::res://scenes/characters/::1707086204
 ::res://scenes/characters/enemies/::1707086194
 enemy_eraser.gd::GDScript::-1::1707068161::0::1::::<>CharacterBody2D<>::
@@ -62,11 +109,14 @@ enemy_sharpener.tscn::PackedScene::4701609931205759225::1707086194::0::1::::<><>
 ::res://scenes/characters/main/::1707086212
 main_character.gd::GDScript::-1::1706912912::0::1::::<>CharacterBody2D<>::
 main_character.tscn::PackedScene::1282843581516108029::1707086212::0::1::::<><>::res://scenes/characters/main/main_character.gd<>uid://cy0cev8cbblob::::res://images/pencil_idle-96x32.png<>uid://bm5fo10jhegur::::res://images/pencil_jump.png<>uid://qwxxvyqh4ngx::::res://images/pencil-running.png
-::res://scenes/levels/::1707335997
-level1.tscn::PackedScene::9179221997499620223::1707335997::0::1::::<><>::res://game_manager.gd<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://loed54sarjv5::::res://images/background/classroom256x128.png<>uid://drtdi17umgscp::::res://scenes/levels/level2.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn<>uid://b3nibhwp3wemx::::res://scenes/objects/moving_platform.tscn
-level2.tscn::PackedScene::8391893423548374283::1707086210::0::1::::<><>::res://game_manager.gd<>uid://dv44vy08o511m::::res://images/background/Blue.png<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://v2eqgrmknqct::::res://scenes/main_menu.tscn<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn
-::res://scenes/objects/::1707335958
-moving_platform.tscn::PackedScene::4379033140465788175::1707335958::0::1::::<><>::uid://hq67av05w1l7::::res://images/Terrain (16x16).png
+::res://scenes/levels/::1707348531
+level1.tscn::PackedScene::9179221997499620223::1707347917::0::1::::<><>::res://game_manager.gd<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://loed54sarjv5::::res://images/background/classroom256x128.png<>uid://drtdi17umgscp::::res://scenes/levels/level2.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn<>uid://b3nibhwp3wemx::::res://scenes/objects/moving_platform.tscn
+level2.tscn::PackedScene::8391893423548374283::1707348531::0::1::::<><>::res://game_manager.gd<>uid://dv44vy08o511m::::res://images/background/Blue.png<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://v2eqgrmknqct::::res://scenes/menus/main_menu.tscn<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn
+::res://scenes/menus/::1707348534
+main_menu.gd::GDScript::-1::1706915678::0::1::::<>Node<>::
+main_menu.tscn::PackedScene::1529975698392732127::1707348534::0::1::::<><>::res://scenes/menus/main_menu.gd<>uid://dxuvauedyxoly::::res://images/background/Green.png<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://cy0cev8cbblob::::res://images/pencil_idle-96x32.png<>uid://ba07c0ff3ifhj::::res://images/ui/Settings.png
+::res://scenes/objects/::1707347917
+moving_platform.tscn::PackedScene::4379033140465788175::1707347917::0::1::::<><>::uid://hq67av05w1l7::::res://images/Terrain (16x16).png
 ::res://UI/::1707079063
 mobile_controls.tscn::PackedScene::2745201396996883562::1706913389::0::1::::<><>::uid://dc8vv8tmfhal6::::res://images/ui/left.png<>uid://cs5rrdkknoj2m::::res://images/ui/right.png<>uid://bi8splv6weveg::::res://images/ui/line.png
 pause_menu.gd::GDScript::-1::1706998855::0::1::::<>Control<>::
