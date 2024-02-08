@@ -1,5 +1,7 @@
+TouchScreenButton
 TextureButton
 Node
+TileMap
 Node2D
 AnimationPlayer
 CollisionShape2D
@@ -10,5 +12,3 @@ CharacterBody2D
 GridContainer
 HFlowContainer
 VSplitContainer
-TouchScreenButton
-CanvasLayer

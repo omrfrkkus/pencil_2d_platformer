@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bfd2cihkddurq"]
+[gd_scene load_steps=8 format=3 uid="uid://bfd2cihkddurq"]
 
 [ext_resource type="Texture2D" uid="uid://dc8vv8tmfhal6" path="res://images/ui/left.png" id="1_vi3xu"]
 [ext_resource type="Texture2D" uid="uid://cs5rrdkknoj2m" path="res://images/ui/right.png" id="2_o2sy4"]
 [ext_resource type="Texture2D" uid="uid://bi8splv6weveg" path="res://images/ui/line.png" id="3_aqj56"]
+[ext_resource type="Texture2D" uid="uid://mctx8eev5y1b" path="res://images/ui/pause.png" id="4_v5o6a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kk0f6"]
 size = Vector2(200, 720)
@@ -44,3 +45,9 @@ action = "jump"
 position = Vector2(203, 620)
 scale = Vector2(3, 3)
 texture = ExtResource("3_aqj56")
+
+[node name="PauseButton" type="TouchScreenButton" parent="."]
+position = Vector2(10, 10)
+scale = Vector2(3, 3)
+texture_normal = ExtResource("4_v5o6a")
+action = "cancel"

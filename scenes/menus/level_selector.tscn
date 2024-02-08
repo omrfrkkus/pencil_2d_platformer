@@ -1,11 +1,17 @@
-[gd_scene load_steps=7 format=3 uid="uid://i7f6b2345ia6"]
+[gd_scene load_steps=13 format=3 uid="uid://i7f6b2345ia6"]
 
 [ext_resource type="Script" path="res://scenes/menus/level_selector.gd" id="1_wfwd8"]
 [ext_resource type="Texture2D" uid="uid://dxuvauedyxoly" path="res://images/background/Green.png" id="2_kth3g"]
+[ext_resource type="Texture2D" uid="uid://dlub4vn18wcuq" path="res://images/levels/connector.png" id="3_rtqva"]
 [ext_resource type="Texture2D" uid="uid://dqoevhdfucqql" path="res://images/levels/01.png" id="3_uo1gu"]
 [ext_resource type="Texture2D" uid="uid://d4csh7f6qyqts" path="res://images/levels/02.png" id="4_vms7e"]
 [ext_resource type="Texture2D" uid="uid://khoa3iuqb41y" path="res://images/levels/03.png" id="5_f58m8"]
+[ext_resource type="Texture2D" uid="uid://c3ulrdk3s5ew2" path="res://images/levels/level_locked.png" id="6_fphmr"]
 [ext_resource type="Texture2D" uid="uid://qi0nods6owy3" path="res://images/levels/04.png" id="6_x84dd"]
+[ext_resource type="Texture2D" uid="uid://dj21n3lrymgob" path="res://images/levels/05.png" id="7_td4jp"]
+[ext_resource type="Texture2D" uid="uid://cxxutukyqbo3w" path="res://images/levels/06.png" id="8_2xdan"]
+[ext_resource type="Texture2D" uid="uid://c2q0g2l7i6cim" path="res://images/levels/07.png" id="9_gip4f"]
+[ext_resource type="Texture2D" uid="uid://yewmuho17po6" path="res://images/levels/08.png" id="10_76iwy"]
 
 [node name="LevelSelector" type="Node"]
 script = ExtResource("1_wfwd8")
@@ -19,43 +25,140 @@ grow_vertical = 2
 texture = ExtResource("2_kth3g")
 stretch_mode = 1
 
-[node name="level1" type="TextureButton" parent="."]
-offset_left = 160.0
-offset_top = 143.0
-offset_right = 200.0
-offset_bottom = 183.0
+[node name="levels" type="Node" parent="."]
+
+[node name="connectors" type="Node" parent="levels"]
+
+[node name="Connector" type="Sprite2D" parent="levels/connectors"]
+position = Vector2(256, 356)
+scale = Vector2(2.75, 1.875)
+texture = ExtResource("3_rtqva")
+
+[node name="Connector2" type="Sprite2D" parent="levels/connectors"]
+position = Vector2(512, 360)
+scale = Vector2(2.75, 1.875)
+texture = ExtResource("3_rtqva")
+
+[node name="Connector3" type="Sprite2D" parent="levels/connectors"]
+position = Vector2(760, 360)
+scale = Vector2(2.75, 1.875)
+texture = ExtResource("3_rtqva")
+
+[node name="Connector4" type="Sprite2D" parent="levels/connectors"]
+position = Vector2(1008, 360)
+scale = Vector2(2.75, 1.875)
+texture = ExtResource("3_rtqva")
+
+[node name="Connector5" type="Sprite2D" parent="levels/connectors"]
+position = Vector2(386.257, 472)
+rotation = 1.57079
+scale = Vector2(2.75, 2.19553)
+texture = ExtResource("3_rtqva")
+
+[node name="Connector6" type="Sprite2D" parent="levels/connectors"]
+position = Vector2(632, 248)
+rotation = 1.57079
+scale = Vector2(2.75, 2.19553)
+texture = ExtResource("3_rtqva")
+
+[node name="Connector7" type="Sprite2D" parent="levels/connectors"]
+position = Vector2(888, 472)
+rotation = 1.57079
+scale = Vector2(2.75, 2.19553)
+texture = ExtResource("3_rtqva")
+
+[node name="level1" type="TextureButton" parent="levels"]
+offset_left = 200.0
+offset_top = 190.0
+offset_right = 240.0
+offset_bottom = 230.0
 scale = Vector2(3, 3)
 texture_normal = ExtResource("3_uo1gu")
 stretch_mode = 6
 
-[node name="level2" type="TextureButton" parent="."]
-offset_left = 160.0
-offset_top = 368.0
-offset_right = 200.0
-offset_bottom = 408.0
+[node name="level2" type="TextureButton" parent="levels"]
+offset_left = 200.0
+offset_top = 408.0
+offset_right = 240.0
+offset_bottom = 448.0
 scale = Vector2(3, 3)
+disabled = true
 texture_normal = ExtResource("4_vms7e")
+texture_disabled = ExtResource("6_fphmr")
 stretch_mode = 6
 
-[node name="level3" type="TextureButton" parent="."]
-offset_left = 399.0
-offset_top = 369.0
-offset_right = 439.0
-offset_bottom = 409.0
+[node name="level3" type="TextureButton" parent="levels"]
+offset_left = 450.0
+offset_top = 408.0
+offset_right = 490.0
+offset_bottom = 448.0
 scale = Vector2(3, 3)
+disabled = true
 texture_normal = ExtResource("5_f58m8")
+texture_disabled = ExtResource("6_fphmr")
 stretch_mode = 6
 
-[node name="level4" type="TextureButton" parent="."]
-offset_left = 396.0
-offset_top = 147.0
-offset_right = 436.0
-offset_bottom = 187.0
+[node name="level4" type="TextureButton" parent="levels"]
+offset_left = 450.0
+offset_top = 190.0
+offset_right = 490.0
+offset_bottom = 230.0
 scale = Vector2(3, 3)
+disabled = true
 texture_normal = ExtResource("6_x84dd")
+texture_disabled = ExtResource("6_fphmr")
 stretch_mode = 6
 
-[connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
-[connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
-[connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
-[connection signal="pressed" from="level4" to="." method="_on_level_4_pressed"]
+[node name="level5" type="TextureButton" parent="levels"]
+offset_left = 700.0
+offset_top = 190.0
+offset_right = 740.0
+offset_bottom = 230.0
+scale = Vector2(3, 3)
+disabled = true
+texture_normal = ExtResource("7_td4jp")
+texture_disabled = ExtResource("6_fphmr")
+stretch_mode = 6
+
+[node name="level6" type="TextureButton" parent="levels"]
+offset_left = 700.0
+offset_top = 408.0
+offset_right = 740.0
+offset_bottom = 448.0
+scale = Vector2(3, 3)
+disabled = true
+texture_normal = ExtResource("8_2xdan")
+texture_disabled = ExtResource("6_fphmr")
+stretch_mode = 6
+
+[node name="level7" type="TextureButton" parent="levels"]
+offset_left = 950.0
+offset_top = 408.0
+offset_right = 990.0
+offset_bottom = 448.0
+scale = Vector2(3, 3)
+disabled = true
+texture_normal = ExtResource("9_gip4f")
+texture_disabled = ExtResource("6_fphmr")
+stretch_mode = 6
+
+[node name="level8" type="TextureButton" parent="levels"]
+offset_left = 950.0
+offset_top = 190.0
+offset_right = 990.0
+offset_bottom = 230.0
+scale = Vector2(3, 3)
+disabled = true
+texture_normal = ExtResource("10_76iwy")
+texture_disabled = ExtResource("6_fphmr")
+texture_focused = ExtResource("6_fphmr")
+stretch_mode = 6
+
+[connection signal="pressed" from="levels/level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="levels/level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="levels/level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="levels/level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="levels/level5" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="levels/level6" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="levels/level7" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="levels/level8" to="." method="_on_level_4_pressed"]

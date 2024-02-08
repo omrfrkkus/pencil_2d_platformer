@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://drtdi17umgscp"]
+[gd_scene load_steps=13 format=3 uid="uid://drtdi17umgscp"]
 
 [ext_resource type="Script" path="res://game_manager.gd" id="1_3ufph"]
 [ext_resource type="Texture2D" uid="uid://dv44vy08o511m" path="res://images/background/Blue.png" id="2_lm45h"]
@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://2fy3j6kohjum" path="res://scenes/collectible.tscn" id="5_elmpa"]
 [ext_resource type="PackedScene" uid="uid://bwlq3owfj8aag" path="res://scenes/finish.tscn" id="6_dr2sq"]
 [ext_resource type="PackedScene" uid="uid://v2eqgrmknqct" path="res://scenes/menus/main_menu.tscn" id="7_bnrid"]
-[ext_resource type="FontFile" uid="uid://to2inn4lww5g" path="res://font/CONCHARS.png" id="8_o7uhm"]
 [ext_resource type="PackedScene" uid="uid://dg6jrn3kk0vrv" path="res://UI/transitions.tscn" id="8_shvyg"]
 [ext_resource type="PackedScene" uid="uid://7mkwpdwagvjq" path="res://UI/pause_menu.tscn" id="9_3cbvs"]
 [ext_resource type="PackedScene" uid="uid://bfd2cihkddurq" path="res://UI/mobile_controls.tscn" id="11_60h45"]
@@ -654,17 +653,6 @@ scene_to_load = ExtResource("7_bnrid")
 [node name="Pause_Menu" parent="UI" node_paths=PackedStringArray("game_manager", "transitioner") instance=ExtResource("9_3cbvs")]
 game_manager = NodePath("../../GameManager")
 transitioner = NodePath("../Transitions")
-
-[node name="Points Label" type="Label" parent="UI"]
-unique_name_in_owner = true
-texture_filter = 1
-offset_right = 302.0
-offset_bottom = 71.0
-theme_override_fonts/font = ExtResource("8_o7uhm")
-theme_override_font_sizes/font_size = 25
-text = "Points : 0"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="MobileControls" parent="UI" instance=ExtResource("11_60h45")]
 layer = 0

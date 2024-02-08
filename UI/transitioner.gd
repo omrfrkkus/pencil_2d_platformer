@@ -44,6 +44,6 @@ func _on_animation_player_animation_finished(anim_name):
 	if(is_reload):
 		get_tree().reload_current_scene()
 	elif(is_exit):
-		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+		get_tree().change_scene_to_file("res://scenes/menus/main_menu.tscn")
 	elif(scene_to_load != null && anim_name == scene_switch_anim):
 		get_tree().change_scene_to_packed(scene_to_load)

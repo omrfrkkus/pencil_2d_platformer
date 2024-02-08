@@ -108,5 +108,5 @@ sprite_frames = SubResource("SpriteFrames_ew0cu")
 autoplay = "default"
 frame_progress = 0.219591
 
-[connection signal="pressed" from="start" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]

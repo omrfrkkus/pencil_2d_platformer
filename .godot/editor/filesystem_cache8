@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707348755
-game_manager.gd::GDScript::-1::1706825461::0::1::::GameManager<>Node<>::
+::res://::1707353907
+game_manager.gd::GDScript::-1::1707353066::0::1::::GameManager<>Node<>::
 README.md::TextFile::-1::1706905373::0::1::::<><>::
 ::res://font/::1706575812
 CONCHARS.png::FontFile::1364143667054613274::1706574783::1706575161::1::::<><>::
@@ -33,7 +33,7 @@ eraser-32x32.png::CompressedTexture2D::2965816236547175631::1707066184::17070661
 eraser-288x32.png::CompressedTexture2D::4252875955654251126::1707066188::1707066188::1::::<><>::
 sharpener (32x32).png::CompressedTexture2D::7844154063389658627::1706529181::1706914420::1::::<><>::
 sharpener-288x32.png::CompressedTexture2D::1803194148770810794::1706914413::1706914414::1::::<><>::
-::res://images/levels/::1707348749
+::res://images/levels/::1707354544
 01.png::CompressedTexture2D::8311465580039592603::1707348749::1707348756::1::::<><>::
 02.png::CompressedTexture2D::9199974368419561144::1707348749::1707348756::1::::<><>::
 03.png::CompressedTexture2D::717190602499875720::1707348749::1707348756::1::::<><>::
@@ -84,17 +84,20 @@ sharpener-288x32.png::CompressedTexture2D::1803194148770810794::1706914413::1706
 48.png::CompressedTexture2D::6333035821719706987::1707348749::1707348756::1::::<><>::
 49.png::CompressedTexture2D::2104942414183016616::1707348749::1707348756::1::::<><>::
 50.png::CompressedTexture2D::4174082364789471857::1707348749::1707348756::1::::<><>::
-::res://images/ui/::1706999743
+connector.png::CompressedTexture2D::7972740515493961600::1707352268::1707352268::1::::<><>::
+level_locked.png::CompressedTexture2D::6780114964064643751::1707354544::1707354544::1::::<><>::
+::res://images/ui/::1707352929
 close.png::CompressedTexture2D::8518620404173403185::1706999743::1706999743::1::::<><>::
 left.png::CompressedTexture2D::7369078525933460061::1706903114::1706903114::1::::<><>::
 line.png::CompressedTexture2D::3017176203095526018::1706905114::1706905115::1::::<><>::
 mute.png::CompressedTexture2D::3374615030395193991::1706997789::1706997789::1::::<><>::
+pause.png::CompressedTexture2D::847591314947668501::1707352929::1707352929::1::::<><>::
 Play.png::CompressedTexture2D::3990511239405606068::1706826193::1706916811::1::::<><>::
 Restart.png::CompressedTexture2D::7158695327781514904::1706917649::1706917650::1::::<><>::
 right.png::CompressedTexture2D::6099234606356374214::1706903119::1706903119::1::::<><>::
 Settings.png::CompressedTexture2D::2439977963973622763::1706562263::1706916811::1::::<><>::
 Volume.png::CompressedTexture2D::1105003389176396819::1706917641::1706917641::1::::<><>::
-::res://scenes/::1707348531
+::res://scenes/::1707353312
 close.png::CompressedTexture2D::3000946443341632050::1706999576::1706999577::1::::<><>::
 collectible.gd::GDScript::-1::1706551894::0::1::::<>Area2D<>::
 collectible.tscn::PackedScene::1906928398125342832::1706825745::0::1::::<><>::res://scenes/collectible.gd<>uid://rvc336oh71jg::::res://images/aplus.png
@@ -109,17 +112,23 @@ enemy_sharpener.tscn::PackedScene::4701609931205759225::1707086194::0::1::::<><>
 ::res://scenes/characters/main/::1707086212
 main_character.gd::GDScript::-1::1706912912::0::1::::<>CharacterBody2D<>::
 main_character.tscn::PackedScene::1282843581516108029::1707086212::0::1::::<><>::res://scenes/characters/main/main_character.gd<>uid://cy0cev8cbblob::::res://images/pencil_idle-96x32.png<>uid://bm5fo10jhegur::::res://images/pencil_jump.png<>uid://qwxxvyqh4ngx::::res://images/pencil-running.png
-::res://scenes/levels/::1707348531
-level1.tscn::PackedScene::9179221997499620223::1707347917::0::1::::<><>::res://game_manager.gd<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://loed54sarjv5::::res://images/background/classroom256x128.png<>uid://drtdi17umgscp::::res://scenes/levels/level2.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn<>uid://b3nibhwp3wemx::::res://scenes/objects/moving_platform.tscn
-level2.tscn::PackedScene::8391893423548374283::1707348531::0::1::::<><>::res://game_manager.gd<>uid://dv44vy08o511m::::res://images/background/Blue.png<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://v2eqgrmknqct::::res://scenes/menus/main_menu.tscn<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn
-::res://scenes/menus/::1707348534
-main_menu.gd::GDScript::-1::1706915678::0::1::::<>Node<>::
-main_menu.tscn::PackedScene::1529975698392732127::1707348534::0::1::::<><>::res://scenes/menus/main_menu.gd<>uid://dxuvauedyxoly::::res://images/background/Green.png<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://cy0cev8cbblob::::res://images/pencil_idle-96x32.png<>uid://ba07c0ff3ifhj::::res://images/ui/Settings.png
+::res://scenes/levels/::1707353723
+level1.tscn::PackedScene::9179221997499620223::1707353723::0::1::::<><>::res://game_manager.gd<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://loed54sarjv5::::res://images/background/classroom256x128.png<>uid://drtdi17umgscp::::res://scenes/levels/level2.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn<>uid://b3nibhwp3wemx::::res://scenes/objects/moving_platform.tscn
+level2.tscn::PackedScene::8391893423548374283::1707353723::0::1::::<><>::res://game_manager.gd<>uid://dv44vy08o511m::::res://images/background/Blue.png<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://v2eqgrmknqct::::res://scenes/menus/main_menu.tscn<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn
+level3.tscn::PackedScene::7155342167861609427::1707353723::0::1::::<><>::res://game_manager.gd<>uid://drtdi17umgscp::::res://scenes/levels/level2.tscn<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://loed54sarjv5::::res://images/background/classroom256x128.png<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://b3nibhwp3wemx::::res://scenes/objects/moving_platform.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn
+level4.tscn::PackedScene::8632487850977370413::1707351325::0::1::::<><>::res://game_manager.gd<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://drtdi17umgscp::::res://scenes/levels/level2.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://loed54sarjv5::::res://images/background/classroom256x128.png<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://b3nibhwp3wemx::::res://scenes/objects/moving_platform.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn
+::res://scenes/menus/::1707354516
+level_selector.gd::GDScript::-1::1707349206::0::1::::<>Node<>::
+level_selector.tscn::PackedScene::627929877354259391::1707354516::0::1::::<><>::res://scenes/menus/level_selector.gd<>uid://dxuvauedyxoly::::res://images/background/Green.png<>uid://dlub4vn18wcuq::::res://images/levels/connector.png<>uid://dqoevhdfucqql::::res://images/levels/01.png<>uid://d4csh7f6qyqts::::res://images/levels/02.png<>uid://khoa3iuqb41y::::res://images/levels/03.png<>uid://c3ulrdk3s5ew2::::res://images/levels/level_locked.png<>uid://qi0nods6owy3::::res://images/levels/04.png<>uid://dj21n3lrymgob::::res://images/levels/05.png<>uid://cxxutukyqbo3w::::res://images/levels/06.png<>uid://c2q0g2l7i6cim::::res://images/levels/07.png<>uid://yewmuho17po6::::res://images/levels/08.png
+main_menu.gd::GDScript::-1::1707353954::0::1::::<>Node<>::
+main_menu.tscn::PackedScene::1529975698392732127::1707354088::0::1::::<><>::res://scenes/menus/main_menu.gd<>uid://dxuvauedyxoly::::res://images/background/Green.png<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://cy0cev8cbblob::::res://images/pencil_idle-96x32.png<>uid://ba07c0ff3ifhj::::res://images/ui/Settings.png
+settings_menu.tscn::PackedScene::5466102742771900162::1707353957::0::1::::<><>::uid://dxuvauedyxoly::::res://images/background/Green.png
 ::res://scenes/objects/::1707347917
 moving_platform.tscn::PackedScene::4379033140465788175::1707347917::0::1::::<><>::uid://hq67av05w1l7::::res://images/Terrain (16x16).png
-::res://UI/::1707079063
-mobile_controls.tscn::PackedScene::2745201396996883562::1706913389::0::1::::<><>::uid://dc8vv8tmfhal6::::res://images/ui/left.png<>uid://cs5rrdkknoj2m::::res://images/ui/right.png<>uid://bi8splv6weveg::::res://images/ui/line.png
+::res://scenes/ui/::1707353377
+::res://UI/::1707353723
+mobile_controls.tscn::PackedScene::2745201396996883562::1707353723::0::1::::<><>::uid://dc8vv8tmfhal6::::res://images/ui/left.png<>uid://cs5rrdkknoj2m::::res://images/ui/right.png<>uid://bi8splv6weveg::::res://images/ui/line.png<>uid://mctx8eev5y1b::::res://images/ui/pause.png
 pause_menu.gd::GDScript::-1::1706998855::0::1::::<>Control<>::
-pause_menu.tscn::PackedScene::2271462780343831110::1707079063::0::1::::<><>::res://UI/pause_menu.gd<>uid://bw4bewqjaeubc::::res://images/ui/Play.png<>uid://c88ywwcmlsvd5::::res://images/ui/Restart.png<>uid://dtmqo0der51aj::::res://images/ui/close.png<>uid://p0jikq8n4wr8::::res://images/ui/Volume.png<>uid://bocxofqvtbycl::::res://images/ui/mute.png
-transitioner.gd::GDScript::-1::1706997305::0::1::::Transitioner<>Control<>::
-transitions.tscn::PackedScene::7644968361241432531::1706999092::0::1::::<><>::res://UI/transitioner.gd
+pause_menu.tscn::PackedScene::2271462780343831110::1707353723::0::1::::<><>::res://UI/pause_menu.gd<>uid://bw4bewqjaeubc::::res://images/ui/Play.png<>uid://c88ywwcmlsvd5::::res://images/ui/Restart.png<>uid://dtmqo0der51aj::::res://images/ui/close.png<>uid://p0jikq8n4wr8::::res://images/ui/Volume.png<>uid://bocxofqvtbycl::::res://images/ui/mute.png
+transitioner.gd::GDScript::-1::1707353555::0::1::::Transitioner<>Control<>::
+transitions.tscn::PackedScene::7644968361241432531::1707352437::0::1::::<><>::res://UI/transitioner.gd
