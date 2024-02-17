@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://hq67av05w1l7" path="res://images/Terrain (16x16).png" id="3_4wi0c"]
 [ext_resource type="PackedScene" uid="uid://sjoim2ad2w0l" path="res://scenes/characters/main/main_character.tscn" id="4_66qlp"]
 [ext_resource type="PackedScene" uid="uid://2fy3j6kohjum" path="res://scenes/collectible.tscn" id="5_geh25"]
+[ext_resource type="Texture2D" uid="uid://dxuvauedyxoly" path="res://images/background/Green.png" id="6_campt"]
 [ext_resource type="PackedScene" uid="uid://bwlq3owfj8aag" path="res://scenes/finish.tscn" id="6_nlgtb"]
-[ext_resource type="Texture2D" uid="uid://loed54sarjv5" path="res://images/background/classroom256x128.png" id="7_auafw"]
 [ext_resource type="PackedScene" uid="uid://drtdi17umgscp" path="res://scenes/levels/level2.tscn" id="7_vyl6f"]
 [ext_resource type="PackedScene" uid="uid://b78q3f6nbjjev" path="res://scenes/characters/enemies/enemy_sharpener.tscn" id="8_65764"]
 [ext_resource type="PackedScene" uid="uid://dg6jrn3kk0vrv" path="res://UI/transitions.tscn" id="9_qn4hc"]
@@ -621,10 +621,14 @@ layer = 0
 process_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="SceneObjects"]
-offset_right = 2829.0
-offset_bottom = 134.0
-scale = Vector2(5, 5)
-texture = ExtResource("7_auafw")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1554.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_campt")
 stretch_mode = 1
 
 [node name="TileMap" type="TileMap" parent="SceneObjects"]

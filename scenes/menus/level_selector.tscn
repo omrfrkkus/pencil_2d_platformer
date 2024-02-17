@@ -82,7 +82,6 @@ offset_top = 408.0
 offset_right = 240.0
 offset_bottom = 448.0
 scale = Vector2(3, 3)
-disabled = true
 texture_normal = ExtResource("4_vms7e")
 texture_disabled = ExtResource("6_fphmr")
 stretch_mode = 6

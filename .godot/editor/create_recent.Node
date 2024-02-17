@@ -1,7 +1,7 @@
+TileMap
 TouchScreenButton
 TextureButton
 Node
-TileMap
 Node2D
 AnimationPlayer
 CollisionShape2D

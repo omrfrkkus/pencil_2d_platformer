@@ -1,15 +1,3 @@
 res://scenes/menus/main_menu.tscn
-res://scenes/menus/level_selector.tscn
-res://UI/transitions.tscn
-res://UI/pause_menu.tscn
-res://UI/transitioner.gd
-res://UI/mobile_controls.tscn
 res://scenes/levels/level1.tscn
-res://game_manager.gd
 res://scenes/levels/level2.tscn
-res://scenes/levels/level3.tscn
-res://scenes/ui/ui.tscn
-res://scenes/menus/setting_menu.tscn
-res://scenes/menus/settings_menu.tscn
-res://scenes/menus/main_menu.gd
-res://scenes/menus/level_selector.gd
