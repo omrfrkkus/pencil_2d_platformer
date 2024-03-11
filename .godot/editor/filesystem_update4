@@ -1,3 +1,6 @@
 res://scenes/menus/main_menu.tscn
 res://scenes/levels/level1.tscn
 res://scenes/levels/level2.tscn
+res://scenes/characters/enemies/enemy_ruler.tscn
+res://scenes/characters/enemies/enemy_ruler.gd
+res://scenes/characters/enemies/enemy_sharpener.tscn
