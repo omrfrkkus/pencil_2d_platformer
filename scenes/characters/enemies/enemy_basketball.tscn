@@ -1,0 +1,115 @@
+[gd_scene load_steps=17 format=3 uid="uid://d2m48wr532h4j"]
+
+[ext_resource type="Script" path="res://scenes/characters/enemies/enemy_basketball.gd" id="1_gb8hk"]
+[ext_resource type="Texture2D" uid="uid://khxbywf1vxb6" path="res://images/enemies/basketball-288x32.png" id="1_x8r04"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pc3y7"]
+atlas = ExtResource("1_x8r04")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tu2f5"]
+atlas = ExtResource("1_x8r04")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87u2a"]
+atlas = ExtResource("1_x8r04")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k3ob3"]
+atlas = ExtResource("1_x8r04")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0dqk"]
+atlas = ExtResource("1_x8r04")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2602t"]
+atlas = ExtResource("1_x8r04")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocnex"]
+atlas = ExtResource("1_x8r04")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1k7o"]
+atlas = ExtResource("1_x8r04")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_og2qt"]
+atlas = ExtResource("1_x8r04")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k5bnq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pc3y7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tu2f5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87u2a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k3ob3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0dqk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2602t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ocnex")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1k7o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_og2qt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rg4l3"]
+size = Vector2(30, 88)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j35q0"]
+radius = 38.3275
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_adiul"]
+radius = 43.0465
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_35dim"]
+size = Vector2(60, 58)
+
+[node name="EnemyBasketball" type="CharacterBody2D"]
+script = ExtResource("1_gb8hk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_k5bnq")
+autoplay = "default"
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_rg4l3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
+shape = SubResource("CircleShape2D_j35q0")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -5)
+shape = SubResource("CircleShape2D_adiul")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 19)
+shape = SubResource("RectangleShape2D_35dim")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

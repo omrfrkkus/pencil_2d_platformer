@@ -1,0 +1,111 @@
+[gd_scene load_steps=16 format=3 uid="uid://mccodf3ttyn2"]
+
+[ext_resource type="Texture2D" uid="uid://cbokebcesrqod" path="res://images/enemies/breakerglassfat-288x32.png" id="1_awhlt"]
+[ext_resource type="Script" path="res://scenes/characters/enemies/enemy_breaker_glass_fat.gd" id="1_xt5j2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_07qnd"]
+radius = 23.0
+height = 56.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lolv"]
+atlas = ExtResource("1_awhlt")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ty55b"]
+atlas = ExtResource("1_awhlt")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f4jcf"]
+atlas = ExtResource("1_awhlt")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vogi4"]
+atlas = ExtResource("1_awhlt")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o518f"]
+atlas = ExtResource("1_awhlt")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q21nq"]
+atlas = ExtResource("1_awhlt")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yg42q"]
+atlas = ExtResource("1_awhlt")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3djyy"]
+atlas = ExtResource("1_awhlt")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xnjtd"]
+atlas = ExtResource("1_awhlt")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hb6xj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lolv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ty55b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f4jcf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vogi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o518f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q21nq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yg42q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3djyy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xnjtd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rykr6"]
+size = Vector2(24, 84)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u87l3"]
+radius = 24.0
+height = 66.0
+
+[node name="EnemyBreakerGlassFat" type="CharacterBody2D"]
+script = ExtResource("1_xt5j2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 20)
+shape = SubResource("CapsuleShape2D_07qnd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_hb6xj")
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_rykr6")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 12)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_u87l3")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

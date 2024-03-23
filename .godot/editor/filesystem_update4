@@ -1,7 +1,9 @@
-res://scenes/characters/enemies/enemy_protractor.tscn
-res://scenes/characters/enemies/enemy_protractor.gd
-res://scenes/menus/main_menu.tscn
+res://scenes/characters/enemies/enemy_calculator.tscn
+res://scenes/characters/enemies/enemy_calculator.gd
 res://scenes/levels/level1.tscn
-res://scenes/levels/level2.tscn
-res://scenes/characters/enemies/enemy_ruler.tscn
-res://scenes/characters/enemies/enemy_sharpener.tscn
+res://scenes/characters/enemies/enemy_compass.tscn
+res://scenes/characters/enemies/enemy_magnet.tscn
+res://scenes/characters/enemies/enemy_basketball.tscn
+res://scenes/characters/enemies/enemy_basketball.gd
+res://scenes/characters/enemies/enemy_cone.tscn
+res://scenes/characters/enemies/enemy_cone.gd

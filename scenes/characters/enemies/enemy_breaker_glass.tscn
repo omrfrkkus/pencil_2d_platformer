@@ -1,0 +1,101 @@
+[gd_scene load_steps=15 format=3 uid="uid://dcikcf1djcuyn"]
+
+[ext_resource type="Texture2D" uid="uid://cllphrmhf6w12" path="res://images/enemies/breakerglass-288x32.png" id="1_0plcg"]
+[ext_resource type="Script" path="res://scenes/characters/enemies/enemy_breaker_glass.gd" id="1_85a1m"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xjulm"]
+radius = 12.0
+height = 96.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kiph8"]
+atlas = ExtResource("1_0plcg")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ceuru"]
+atlas = ExtResource("1_0plcg")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2o46"]
+atlas = ExtResource("1_0plcg")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vu73t"]
+atlas = ExtResource("1_0plcg")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mihr"]
+atlas = ExtResource("1_0plcg")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fx3ws"]
+atlas = ExtResource("1_0plcg")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3wcyk"]
+atlas = ExtResource("1_0plcg")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n5crf"]
+atlas = ExtResource("1_0plcg")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3ugl"]
+atlas = ExtResource("1_0plcg")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4cvg3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kiph8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ceuru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2o46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vu73t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mihr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fx3ws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3wcyk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n5crf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3ugl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kp82d"]
+size = Vector2(30, 96)
+
+[node name="EnemyBreakerGlass" type="CharacterBody2D"]
+script = ExtResource("1_85a1m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_xjulm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_4cvg3")
+autoplay = "default"
+frame_progress = 0.373582
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_kp82d")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

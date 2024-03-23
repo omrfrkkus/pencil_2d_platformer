@@ -1,0 +1,102 @@
+[gd_scene load_steps=15 format=3 uid="uid://dsdmqbb0kfsel"]
+
+[ext_resource type="Script" path="res://scenes/characters/enemies/enemy_compass.gd" id="1_t8y47"]
+[ext_resource type="Texture2D" uid="uid://odeq0eyxko6q" path="res://images/enemies/compass-288x32.png" id="2_wi5t8"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r2c2b"]
+radius = 36.0
+height = 96.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5384g"]
+atlas = ExtResource("2_wi5t8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1t4t3"]
+atlas = ExtResource("2_wi5t8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xhyix"]
+atlas = ExtResource("2_wi5t8")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3h1fu"]
+atlas = ExtResource("2_wi5t8")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ka2y"]
+atlas = ExtResource("2_wi5t8")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mmoey"]
+atlas = ExtResource("2_wi5t8")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tujub"]
+atlas = ExtResource("2_wi5t8")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qkr8"]
+atlas = ExtResource("2_wi5t8")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8klun"]
+atlas = ExtResource("2_wi5t8")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xrsc6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5384g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1t4t3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xhyix")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3h1fu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ka2y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mmoey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tujub")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qkr8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8klun")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v1erm"]
+radius = 44.0
+height = 96.0
+
+[node name="EnemyCompass" type="CharacterBody2D"]
+script = ExtResource("1_t8y47")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_r2c2b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_xrsc6")
+autoplay = "default"
+frame_progress = 0.062067
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_v1erm")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
