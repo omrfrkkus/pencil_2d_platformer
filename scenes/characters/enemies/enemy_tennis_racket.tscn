@@ -1,0 +1,110 @@
+[gd_scene load_steps=16 format=3 uid="uid://c36jjufilwchu"]
+
+[ext_resource type="Texture2D" uid="uid://ew2b0ohiv5yd" path="res://images/enemies/tennisracket-288x64.png" id="1_nthvg"]
+[ext_resource type="Script" path="res://scenes/characters/enemies/enemy_tennis_racket.gd" id="1_tp3uu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bpi1r"]
+atlas = ExtResource("1_nthvg")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w6m0o"]
+atlas = ExtResource("1_nthvg")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_as4id"]
+atlas = ExtResource("1_nthvg")
+region = Rect2(64, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pnyp3"]
+atlas = ExtResource("1_nthvg")
+region = Rect2(96, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mhni3"]
+atlas = ExtResource("1_nthvg")
+region = Rect2(128, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_20req"]
+atlas = ExtResource("1_nthvg")
+region = Rect2(160, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r55j4"]
+atlas = ExtResource("1_nthvg")
+region = Rect2(192, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_klijr"]
+atlas = ExtResource("1_nthvg")
+region = Rect2(224, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cu7cb"]
+atlas = ExtResource("1_nthvg")
+region = Rect2(256, 0, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8jres"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bpi1r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w6m0o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_as4id")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pnyp3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mhni3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_20req")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r55j4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_klijr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cu7cb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t5qn4"]
+radius = 14.0
+height = 192.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_58exa"]
+radius = 48.0
+height = 122.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3cmck"]
+size = Vector2(30, 106)
+
+[node name="EnemyTennisRacket" type="CharacterBody2D"]
+script = ExtResource("1_tp3uu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_8jres")
+autoplay = "default"
+frame_progress = 0.00537064
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_t5qn4")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -36)
+shape = SubResource("CapsuleShape2D_58exa")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 43)
+shape = SubResource("RectangleShape2D_3cmck")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
