@@ -1,0 +1,103 @@
+[gd_scene load_steps=15 format=3 uid="uid://dv3ktb7clgltm"]
+
+[ext_resource type="Script" path="res://scenes/characters/enemies/enemy_ketchup.gd" id="1_fcobm"]
+[ext_resource type="Texture2D" uid="uid://d2wwucfektynb" path="res://images/enemies/ketchup-288x32.png" id="2_s84kl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_as0oo"]
+atlas = ExtResource("2_s84kl")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5twte"]
+atlas = ExtResource("2_s84kl")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bl38"]
+atlas = ExtResource("2_s84kl")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwf1j"]
+atlas = ExtResource("2_s84kl")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_in0nf"]
+atlas = ExtResource("2_s84kl")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77lyn"]
+atlas = ExtResource("2_s84kl")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejgo8"]
+atlas = ExtResource("2_s84kl")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pvt8y"]
+atlas = ExtResource("2_s84kl")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jifoa"]
+atlas = ExtResource("2_s84kl")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wjexe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_as0oo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5twte")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5bl38")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwf1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_in0nf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77lyn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejgo8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pvt8y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jifoa")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b8byr"]
+radius = 15.0
+height = 82.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p86hy"]
+radius = 18.0
+height = 96.0
+
+[node name="EnemyKetchup" type="CharacterBody2D"]
+script = ExtResource("1_fcobm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_wjexe")
+autoplay = "default"
+frame_progress = 0.60337
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 7)
+shape = SubResource("CapsuleShape2D_b8byr")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_p86hy")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

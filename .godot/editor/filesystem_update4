@@ -1,6 +1,11 @@
-res://scenes/characters/enemies/enemy_fork.gd
-res://scenes/characters/enemies/enemy_fork.tscn
+res://scenes/characters/enemies/enemy_ketchup.gd
+res://scenes/characters/enemies/enemy_ketchup.tscn
 res://scenes/levels/level1.tscn
-res://scenes/characters/enemies/enemy_tennis_racket.tscn
-res://scenes/characters/enemies/enemy_ruler.tscn
-res://scenes/characters/enemies/enemy_spoon.tscn
+res://scenes/characters/enemies/enemy_mayonnaise.gd
+res://scenes/characters/enemies/enemy_mayonnaise.tscn
+res://scenes/characters/enemies/enemy_keyboard.gd
+res://scenes/characters/enemies/enemy_keyboard.tscn
+res://scenes/characters/enemies/enemy_monitor.tscn
+res://scenes/characters/enemies/enemy_monitor.gd
+res://scenes/characters/enemies/enemy_mouse.tscn
+res://scenes/characters/enemies/enemy_mouse.gd

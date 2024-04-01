@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://d31qpewbyksf4"]
+[gd_scene load_steps=17 format=3 uid="uid://d31qpewbyksf4"]
 
 [ext_resource type="Script" path="res://game_manager.gd" id="1_wv8gq"]
 [ext_resource type="Texture2D" uid="uid://hq67av05w1l7" path="res://images/Terrain (16x16).png" id="3_4wi0c"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://7mkwpdwagvjq" path="res://UI/pause_menu.tscn" id="10_d6v8p"]
 [ext_resource type="PackedScene" uid="uid://bfd2cihkddurq" path="res://UI/mobile_controls.tscn" id="12_nouqw"]
 [ext_resource type="PackedScene" uid="uid://de6sau0njx1xf" path="res://scenes/characters/enemies/enemy_eraser.tscn" id="13_yoc1n"]
+[ext_resource type="PackedScene" uid="uid://ci87w0kp4ib53" path="res://scenes/characters/enemies/enemy_mayonnaise.tscn" id="14_0o3l3"]
 [ext_resource type="PackedScene" uid="uid://b3nibhwp3wemx" path="res://scenes/objects/moving_platform.tscn" id="14_l5p3n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rthhm"]
@@ -688,3 +689,7 @@ position = Vector2(1300, 558)
 transitioner = NodePath("../../../UI/Transitions")
 left_limit = 1250.0
 right_limit = 1500.0
+
+[node name="EnemyMayonnaise" parent="SceneObjects/Enemies" node_paths=PackedStringArray("transitioner") instance=ExtResource("14_0o3l3")]
+position = Vector2(708, 191)
+transitioner = NodePath("../../../UI/Transitions")
