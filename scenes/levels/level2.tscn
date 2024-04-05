@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://drtdi17umgscp"]
+[gd_scene load_steps=18 format=3 uid="uid://drtdi17umgscp"]
 
 [ext_resource type="Script" path="res://game_manager.gd" id="1_3ufph"]
 [ext_resource type="Texture2D" uid="uid://dhsqpyegy7hsm" path="res://images/background/classroom-256x128.png" id="2_hktj4"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bfd2cihkddurq" path="res://UI/mobile_controls.tscn" id="11_60h45"]
 [ext_resource type="PackedScene" uid="uid://cl3ccv4c44tg6" path="res://scenes/characters/enemies/enemy_protractor.tscn" id="11_kqsdt"]
 [ext_resource type="PackedScene" uid="uid://bmea30bnpbjls" path="res://scenes/characters/enemies/enemy_ruler.tscn" id="13_ifb1q"]
+[ext_resource type="PackedScene" uid="uid://c87do70sjhcwx" path="res://scenes/levels/level3.tscn" id="13_y8q6l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r31i5"]
 texture = ExtResource("7_bbmwg")
@@ -658,7 +659,7 @@ transitioner = NodePath("../../../UI/Transitions")
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Transitions" parent="UI" instance=ExtResource("8_shvyg")]
-scene_to_load = ExtResource("7_bnrid")
+scene_to_load = ExtResource("13_y8q6l")
 
 [node name="Pause_Menu" parent="UI" node_paths=PackedStringArray("game_manager", "transitioner") instance=ExtResource("9_3cbvs")]
 game_manager = NodePath("../../GameManager")

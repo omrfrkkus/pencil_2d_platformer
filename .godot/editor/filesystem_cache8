@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712003160
+::res://::1712355527
 game_manager.gd::GDScript::-1::1707356666::0::1::::GameManager<>Node<>::
 README.md::TextFile::-1::1706908973::0::1::::<><>::
 ::res://font/::1706579412
@@ -23,13 +23,17 @@ Purple.png::CompressedTexture2D::7271160631722995972::1706918596::1706918596::1:
 Terrain (16x16).png::CompressedTexture2D::526291355329663726::1706477782::1706829322::1::::<><>::
 terrain-352x176.png::CompressedTexture2D::3615877751614565044::1707359050::1707359051::1::::<><>::
 Yellow.png::CompressedTexture2D::5036540455937814669::1706918596::1706918596::1::::<><>::
-::res://images/background/::1707510817
+::res://images/background/::1712100496
+basketballcourt-128x128.png::CompressedTexture2D::7817239523551428172::1712087865::1712087865::1::::<><>::
 Blue.png::CompressedTexture2D::8694894317507748632::1706918596::1706919445::1::::<><>::
 Brown.png::CompressedTexture2D::2295908238790629122::1706918596::1706919445::1::::<><>::
 classroom256x128.png::CompressedTexture2D::801228415246322964::1707339548::1707339548::1::::<><>::
 classroom-256x128.png::CompressedTexture2D::7688742281957014860::1707504767::1707504767::1::::<><>::
+code-128x128.png::CompressedTexture2D::1426432415717436219::1712006470::1712006470::1::::<><>::
 Gray.png::CompressedTexture2D::4583209278223678595::1706918596::1706919445::1::::<><>::
 Green.png::CompressedTexture2D::8816169123498858718::1706918596::1706919445::1::::<><>::
+Math-pixelicious.png::CompressedTexture2D::5261752819787538235::1712099349::1712099349::1::::<><>::
+Math.png::CompressedTexture2D::6020682738290575217::1712100496::1712100496::1::::<><>::
 ::res://images/enemies/::1712006094
 basketball-32x32.png::CompressedTexture2D::7032238104417848656::1711211508::1711211508::1::::<><>::
 basketball-288x32.png::CompressedTexture2D::717738652095150341::1711211508::1711211508::1::::<><>::
@@ -142,7 +146,7 @@ collectible.tscn::PackedScene::1906928398125342832::1706829345::0::1::::<><>::re
 finish.gd::GDScript::-1::1706829582::0::1::::<>Area2D<>::
 finish.tscn::PackedScene::3954305642691171902::1706997729::0::1::::<><>::uid://dj2v81kefqaln::::res://images/note.png<>res://scenes/finish.gd
 ::res://scenes/characters/::1707089804
-::res://scenes/characters/enemies/::1712006070
+::res://scenes/characters/enemies/::1712098877
 enemy_basketball.gd::GDScript::-1::1711211732::0::1::::<>CharacterBody2D<>::
 enemy_basketball.tscn::PackedScene::9080954269520912535::1711214745::0::1::::<><>::res://scenes/characters/enemies/enemy_basketball.gd<>uid://khxbywf1vxb6::::res://images/enemies/basketball-288x32.png
 enemy_breaker_glass.gd::GDScript::-1::1711204516::0::1::::<>CharacterBody2D<>::
@@ -159,8 +163,18 @@ enemy_eraser.gd::GDScript::-1::1707071761::0::1::::<>CharacterBody2D<>::
 enemy_eraser.tscn::PackedScene::7505107131567817763::1707089794::0::1::::<><>::uid://b1ueil7rel5cc::::res://images/enemies/eraser-288x32.png<>res://scenes/characters/enemies/enemy_eraser.gd
 enemy_fork.gd::GDScript::-1::1711819445::0::1::::<>CharacterBody2D<>::
 enemy_fork.tscn::PackedScene::5827912004869838908::1711819070::0::1::::<><>::res://scenes/characters/enemies/enemy_fork.gd<>uid://0wq03h86xsig::::res://images/enemies/fork-288x32.png
+enemy_ketchup.gd::GDScript::-1::1712003434::0::1::::<>CharacterBody2D<>::
+enemy_ketchup.tscn::PackedScene::8691671546666425822::1712098877::0::1::::<><>::res://scenes/characters/enemies/enemy_ketchup.gd<>uid://d2wwucfektynb::::res://images/enemies/ketchup-288x32.png
+enemy_keyboard.gd::GDScript::-1::1712004792::0::1::::<>CharacterBody2D<>::
+enemy_keyboard.tscn::PackedScene::2867156535866154269::1712098877::0::1::::<><>::res://scenes/characters/enemies/enemy_keyboard.gd<>uid://bjeixius344k1::::res://images/enemies/keyboard-576x32.png
 enemy_magnet.gd::GDScript::-1::1711208257::0::1::::<>CharacterBody2D<>::
 enemy_magnet.tscn::PackedScene::34189405681588116::1711214745::0::1::::<><>::res://scenes/characters/enemies/enemy_magnet.gd<>uid://dcs00012vi216::::res://images/enemies/magnet-288x32.png
+enemy_mayonnaise.gd::GDScript::-1::1712003646::0::1::::<>CharacterBody2D<>::
+enemy_mayonnaise.tscn::PackedScene::5404460142861267852::1712098877::0::1::::<><>::res://scenes/characters/enemies/enemy_mayonnaise.gd<>uid://md014ivgr6tk::::res://images/enemies/mayonnaise-288x32.png
+enemy_monitor.gd::GDScript::-1::1712005630::0::1::::<>CharacterBody2D<>::
+enemy_monitor.tscn::PackedScene::2633159443740656389::1712098877::0::1::::<><>::uid://d1eggh8gtce33::::res://images/enemies/monitor-288x32.png<>res://scenes/characters/enemies/enemy_monitor.gd
+enemy_mouse.gd::GDScript::-1::1712006189::0::1::::<>CharacterBody2D<>::
+enemy_mouse.tscn::PackedScene::407670392660545538::1712098877::0::1::::<><>::res://scenes/characters/enemies/enemy_mouse.gd<>uid://dkmbuhcq5yvu0::::res://images/enemies/mouse-288x32.png
 enemy_protractor.gd::GDScript::-1::1711201074::0::1::::<>CharacterBody2D<>::
 enemy_protractor.tscn::PackedScene::5602847378012042479::1711201080::0::1::::<><>::uid://2jkpm68la53b::::res://images/enemies/protractor-288x32.png<>res://scenes/characters/enemies/enemy_protractor.gd
 enemy_ruler.gd::GDScript::-1::1710121887::0::1::::<>CharacterBody2D<>::
@@ -172,26 +186,17 @@ enemy_tennis_racket.gd::GDScript::-1::1711817997::0::1::::<>CharacterBody2D<>::
 enemy_tennis_racket.tscn::PackedScene::6802688283277079466::1711819461::0::1::::<><>::uid://ew2b0ohiv5yd::::res://images/enemies/tennisracket-288x64.png<>res://scenes/characters/enemies/enemy_tennis_racket.gd
 enemy_thermometer.gd::GDScript::-1::1711208038::0::1::::<>CharacterBody2D<>::
 enemy_thermometer.tscn::PackedScene::8919294231020692980::1711208054::0::1::::<><>::res://scenes/characters/enemies/enemy_thermometer.gd<>uid://1e0os6sqkvua::::res://images/enemies/thermometer-288x32.png
-enemy_ketchup.tscn::PackedScene::8691671546666425822::1712005741::0::1::::<><>::res://scenes/characters/enemies/enemy_ketchup.gd<>uid://d2wwucfektynb::::res://images/enemies/ketchup-288x32.png
-enemy_ketchup.gd::GDScript::-1::1712003434::0::1::::<>CharacterBody2D<>::
-enemy_mayonnaise.tscn::PackedScene::5404460142861267852::1712005741::0::1::::<><>::res://scenes/characters/enemies/enemy_mayonnaise.gd<>uid://md014ivgr6tk::::res://images/enemies/mayonnaise-288x32.png
-enemy_mayonnaise.gd::GDScript::-1::1712003646::0::1::::<>CharacterBody2D<>::
-enemy_keyboard.tscn::PackedScene::2867156535866154269::1712005741::0::1::::<><>::res://scenes/characters/enemies/enemy_keyboard.gd<>uid://bjeixius344k1::::res://images/enemies/keyboard-576x32.png
-enemy_keyboard.gd::GDScript::-1::1712004792::0::1::::<>CharacterBody2D<>::
-enemy_monitor.tscn::PackedScene::2633159443740656389::1712005741::0::1::::<><>::uid://d1eggh8gtce33::::res://images/enemies/monitor-288x32.png<>res://scenes/characters/enemies/enemy_monitor.gd
-enemy_monitor.gd::GDScript::-1::1712005630::0::1::::<>CharacterBody2D<>::
-enemy_mouse.tscn::PackedScene::407670392660545538::1712006070::0::1::::<><>::
 ::res://scenes/characters/main/::1707089812
 main_character.gd::GDScript::-1::1706916512::0::1::::<>CharacterBody2D<>::
 main_character.tscn::PackedScene::1282843581516108029::1707089812::0::1::::<><>::res://scenes/characters/main/main_character.gd<>uid://cy0cev8cbblob::::res://images/pencil_idle-96x32.png<>uid://bm5fo10jhegur::::res://images/pencil_jump.png<>uid://qwxxvyqh4ngx::::res://images/pencil-running.png
-::res://scenes/levels/::1712005741
-level1.tscn::PackedScene::9179221997499620223::1712005741::0::1::::<><>::res://game_manager.gd<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://dxuvauedyxoly::::res://images/background/Green.png<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://drtdi17umgscp::::res://scenes/levels/level2.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn<>uid://bdrr0ssh8v5o0::::res://scenes/characters/enemies/enemy_monitor.tscn<>uid://b3nibhwp3wemx::::res://scenes/objects/moving_platform.tscn
-level2.tscn::PackedScene::8391893423548374283::1711205063::0::1::::<><>::res://game_manager.gd<>uid://dhsqpyegy7hsm::::res://images/background/classroom-256x128.png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://brrs8i5opegrk::::res://images/terrain-352x176.png<>uid://v2eqgrmknqct::::res://scenes/menus/main_menu.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://cl3ccv4c44tg6::::res://scenes/characters/enemies/enemy_protractor.tscn<>uid://bmea30bnpbjls::::res://scenes/characters/enemies/enemy_ruler.tscn
-level3.tscn::PackedScene::7155342167861609427::1707357323::0::1::::<><>::res://game_manager.gd<>uid://drtdi17umgscp::::res://scenes/levels/level2.tscn<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://loed54sarjv5::::res://images/background/classroom256x128.png<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://b3nibhwp3wemx::::res://scenes/objects/moving_platform.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn
+::res://scenes/levels/::1712101520
+level1.tscn::PackedScene::9179221997499620223::1712101519::0::1::::<><>::res://game_manager.gd<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://dxuvauedyxoly::::res://images/background/Green.png<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://drtdi17umgscp::::res://scenes/levels/level2.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn<>uid://b3nibhwp3wemx::::res://scenes/objects/moving_platform.tscn
+level2.tscn::PackedScene::8391893423548374283::1712101520::0::1::::<><>::res://game_manager.gd<>uid://dhsqpyegy7hsm::::res://images/background/classroom-256x128.png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://brrs8i5opegrk::::res://images/terrain-352x176.png<>uid://v2eqgrmknqct::::res://scenes/menus/main_menu.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://cl3ccv4c44tg6::::res://scenes/characters/enemies/enemy_protractor.tscn<>uid://bmea30bnpbjls::::res://scenes/characters/enemies/enemy_ruler.tscn<>uid://c87do70sjhcwx::::res://scenes/levels/level3.tscn
+level3.tscn::PackedScene::7155342167861609427::1712101519::0::1::::<><>::res://game_manager.gd<>uid://drtdi17umgscp::::res://scenes/levels/level2.tscn<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://cr1p1aogoq24l::::res://images/background/Math.png<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://b3nibhwp3wemx::::res://scenes/objects/moving_platform.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn
 level4.tscn::PackedScene::8632487850977370413::1707354925::0::1::::<><>::res://game_manager.gd<>uid://dg6jrn3kk0vrv::::res://UI/transitions.tscn<>uid://drtdi17umgscp::::res://scenes/levels/level2.tscn<>uid://7mkwpdwagvjq::::res://UI/pause_menu.tscn<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://bfd2cihkddurq::::res://UI/mobile_controls.tscn<>uid://loed54sarjv5::::res://images/background/classroom256x128.png<>uid://hq67av05w1l7::::res://images/Terrain (16x16).png<>uid://sjoim2ad2w0l::::res://scenes/characters/main/main_character.tscn<>uid://2fy3j6kohjum::::res://scenes/collectible.tscn<>uid://bwlq3owfj8aag::::res://scenes/finish.tscn<>uid://b3nibhwp3wemx::::res://scenes/objects/moving_platform.tscn<>uid://b78q3f6nbjjev::::res://scenes/characters/enemies/enemy_sharpener.tscn<>uid://de6sau0njx1xf::::res://scenes/characters/enemies/enemy_eraser.tscn
-::res://scenes/menus/::1711205063
+::res://scenes/menus/::1712101520
 level_selector.gd::GDScript::-1::1707358262::0::1::::<>Node<>::
-level_selector.tscn::PackedScene::627929877354259391::1707359095::0::1::::<><>::res://scenes/menus/level_selector.gd<>uid://dxuvauedyxoly::::res://images/background/Green.png<>uid://dlub4vn18wcuq::::res://images/levels/connector.png<>uid://dqoevhdfucqql::::res://images/levels/01.png<>uid://d4csh7f6qyqts::::res://images/levels/02.png<>uid://khoa3iuqb41y::::res://images/levels/03.png<>uid://c3ulrdk3s5ew2::::res://images/levels/level_locked.png<>uid://qi0nods6owy3::::res://images/levels/04.png<>uid://dj21n3lrymgob::::res://images/levels/05.png<>uid://cxxutukyqbo3w::::res://images/levels/06.png<>uid://c2q0g2l7i6cim::::res://images/levels/07.png<>uid://yewmuho17po6::::res://images/levels/08.png
+level_selector.tscn::PackedScene::627929877354259391::1712101520::0::1::::<><>::res://scenes/menus/level_selector.gd<>uid://dxuvauedyxoly::::res://images/background/Green.png<>uid://dlub4vn18wcuq::::res://images/levels/connector.png<>uid://dqoevhdfucqql::::res://images/levels/01.png<>uid://d4csh7f6qyqts::::res://images/levels/02.png<>uid://khoa3iuqb41y::::res://images/levels/03.png<>uid://c3ulrdk3s5ew2::::res://images/levels/level_locked.png<>uid://qi0nods6owy3::::res://images/levels/04.png<>uid://dj21n3lrymgob::::res://images/levels/05.png<>uid://cxxutukyqbo3w::::res://images/levels/06.png<>uid://c2q0g2l7i6cim::::res://images/levels/07.png<>uid://yewmuho17po6::::res://images/levels/08.png
 main_menu.gd::GDScript::-1::1707357554::0::1::::<>Node<>::
 main_menu.tscn::PackedScene::1529975698392732127::1711205063::0::1::::<><>::res://scenes/menus/main_menu.gd<>uid://dxuvauedyxoly::::res://images/background/Green.png<>uid://to2inn4lww5g::::res://font/CONCHARS.png<>uid://cy0cev8cbblob::::res://images/pencil_idle-96x32.png<>uid://ba07c0ff3ifhj::::res://images/ui/Settings.png
 settings_menu.tscn::PackedScene::5466102742771900162::1707357557::0::1::::<><>::uid://dxuvauedyxoly::::res://images/background/Green.png
